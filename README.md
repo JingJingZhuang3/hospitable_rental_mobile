@@ -12,3 +12,4 @@ Website Link: https://jingjingzhuang3.github.io/hospitable_rental_mobile
 - UI Library: antd-mobile v5
 - Other Component Libraries: react-virtualized, formil+yup, react-spring, etc.
 - Map API: Baidu Map API
+> It can only be located in China. Location outside China cannot be located because authorization only for commerce
