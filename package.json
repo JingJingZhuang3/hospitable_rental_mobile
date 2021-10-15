@@ -48,7 +48,7 @@
   "devDependencies": {
     "gh-pages": "^3.2.3"
   },
-  "homepage": "http://jingjingzhuang3.github.io/Hospitable_Rental_Mobile",
+  "homepage": "http://jingjingzhuang3.github.io/hospitable_rental_mobile",
   "scripts": { 
     "start": "react-scripts start",
     "predeploy": "npm run build",

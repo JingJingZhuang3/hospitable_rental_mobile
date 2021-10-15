@@ -9,7 +9,7 @@ function App() {
     <Router>
       <div className="App">
         {/* redirect the default root path to home */}
-        <Route path="/" exact render={() => <Redirect to="/home" />} />
+        <Route path="/" exact render={() => <Redirect to="hospitable_rental_mobile/home" />} />
         {/* configure route */}
         <Route path="/home" component={Home}></Route>
         <Route path="/citylist" component={CityList}></Route>
