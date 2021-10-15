@@ -1,4 +1,4 @@
-## Open Source Proj: Hospitable Rental Website - Mobile
+## Hospitable Rental Website - Mobile
 Website Link: https://jingjingzhuang3.github.io/hospitable_rental_mobile
 > Note: The open source data comes from China so the site is mostly in Chinese
 ## Project Description:
