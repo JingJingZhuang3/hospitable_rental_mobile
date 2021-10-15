@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/hospitable_rental_mobile/static/css/main.9ed19ab0.chunk.css",
-    "main.js": "/hospitable_rental_mobile/static/js/main.9a3646bb.chunk.js",
-    "main.js.map": "/hospitable_rental_mobile/static/js/main.9a3646bb.chunk.js.map",
+    "main.js": "/hospitable_rental_mobile/static/js/main.d7e06435.chunk.js",
+    "main.js.map": "/hospitable_rental_mobile/static/js/main.d7e06435.chunk.js.map",
     "runtime-main.js": "/hospitable_rental_mobile/static/js/runtime-main.0b03b782.js",
     "runtime-main.js.map": "/hospitable_rental_mobile/static/js/runtime-main.0b03b782.js.map",
     "static/css/2.1cb5208b.chunk.css": "/hospitable_rental_mobile/static/css/2.1cb5208b.chunk.css",
@@ -27,6 +27,6 @@
     "static/css/2.1cb5208b.chunk.css",
     "static/js/2.dbdfe8a6.chunk.js",
     "static/css/main.9ed19ab0.chunk.css",
-    "static/js/main.9a3646bb.chunk.js"
+    "static/js/main.d7e06435.chunk.js"
   ]
 }
