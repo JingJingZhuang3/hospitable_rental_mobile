@@ -1,6 +1,6 @@
 ## Open Source Proj: Hospitable Rental Website - Mobile
 Website Link: https://jingjingzhuang3.github.io/hospitable_rental_mobile
-### Note: The open source data comes from China so the site is mostly in Chinese
+> Note: The open source data comes from China so the site is mostly in Chinese
 ## Project Description:
 - Mobile Website for Rental
 - This is an open source project use to create an online rental website with functions similar to Apartments.com, which aims to meet the needs of users to rent apartments.
