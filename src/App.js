@@ -3,6 +3,8 @@ import React from "react"
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 import Home from './pages/Home'
 import CityList from './pages/CityList'
+import CityMap from './pages/Map'
+import Rent from './pages/Rent'
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         {/* configure route */}
         <Route path="/hospitable_rental_mobile/home" component={Home}></Route>
         <Route path="/hospitable_rental_mobile/citylist" component={CityList}></Route>
+        <Route path="/hospitable_rental_mobile/map" component={CityMap} />
+        <Route path="/hospitable_rental_mobile/rent" component={Rent} />
       </div>
     </Router>
   );

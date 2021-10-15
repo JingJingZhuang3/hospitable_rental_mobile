@@ -6,8 +6,6 @@ import News from "../News"
 import Index from '../Index'
 import HouseList from '../HouseList'
 import Profile from '../Profile'
-import Map from '../Map'
-import Rent from '../Rent'
 
 /**
  * UI version: Ant Design Mobile v5
@@ -47,8 +45,6 @@ class Home extends React.Component {
                 <Route path="/hospitable_rental_mobile/home/list" component={HouseList} />
                 <Route path="/hospitable_rental_mobile/home/news" component={News} />
                 <Route path="/hospitable_rental_mobile/home/profile" component={Profile} />
-                <Route path="/hospitable_rental_mobile/home/map" component={Map} />
-                <Route path="/hospitable_rental_mobile/home/rent" component={Rent} />
                 {/* TabBar */}
                 {/* Highlight icon: activeKey = last segement of pathname */}
                 <TabBar

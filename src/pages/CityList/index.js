@@ -1,6 +1,6 @@
 import React from "react"
 // import { Route } from 'react-router-dom'
-import { NavBar, Toast } from 'antd-mobile'
+import { NavBar } from 'antd-mobile'
 import './index.scss'
 import axios from 'axios'
 

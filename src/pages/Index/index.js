@@ -125,7 +125,10 @@ export default class Index extends React.Component{
             item => <Grid.Item key={item.id}>
                 <div
                     className="group-item"
-                    onClick={() => this.props.history.push('/home/profile')}
+                    // onClick={() => this.props.history.push('/hospitable_rental_mobile/home/profile')}
+                    onClick={() => {
+                        Toast.show(`Sorry, it's just a decoration:>`)
+                    }}
                 >
                     <div className="desc">
                         <p className="title">{item.title}</p>
