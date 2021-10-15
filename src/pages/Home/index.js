@@ -6,6 +6,8 @@ import News from "../News"
 import Index from '../Index'
 import HouseList from '../HouseList'
 import Profile from '../Profile'
+import Map from '../Map'
+import Rent from '../Rent'
 
 /**
  * UI version: Ant Design Mobile v5
@@ -41,16 +43,18 @@ class Home extends React.Component {
         return (
             <div className="home">
                 {/* render child route */}
-                <Route exact path="/home" component={Index} />
-                <Route path="/home/list" component={HouseList} />
-                <Route path="/home/news" component={News} />
-                <Route path="/home/profile" component={Profile} />
+                <Route exact path="/hospitable_rental_mobile/home" component={Index} />
+                <Route path="/hospitable_rental_mobile/home/list" component={HouseList} />
+                <Route path="/hospitable_rental_mobile/home/news" component={News} />
+                <Route path="/hospitable_rental_mobile/home/profile" component={Profile} />
+                <Route path="/hospitable_rental_mobile/home/map" component={Map} />
+                <Route path="/hospitable_rental_mobile/home/rent" component={Rent} />
                 {/* TabBar */}
                 {/* Highlight icon: activeKey = last segement of pathname */}
                 <TabBar
                     activeKey={this.props.location.pathname.substring(this.props.location.pathname.lastIndexOf('/') + 1)}
                     onChange={key => {
-                        key === 'home' ? this.props.history.push('/home') : this.props.history.push('/home/' + key)
+                        key === 'home' ? this.props.history.push('/hospitable_rental_mobile/home') : this.props.history.push('/hospitable_rental_mobile/home/' + key)
                     }}
                 >
                     {tabs.map(item => (

@@ -51,11 +51,14 @@ class CityList extends React.Component{
     }
     render() {
         return (
-            <div className="navbar">
-                <NavBar
-                    backArrow={<i className="iconfont icon-back" />}
-                    onBack={this.handleBack}
-                >City List</NavBar>
+            <div>
+                <div className="navbar">
+                    <NavBar
+                        backArrow={<i className="iconfont icon-back" />}
+                        onBack={this.handleBack}
+                    >City List</NavBar>
+                </div>
+                <h1>Here will have the city list...</h1>
             </div>
         )
     }

@@ -14,25 +14,25 @@ const navs = [
         id: 1,
         img: Nav1,
         title: 'Entire Rent',
-        path: '/home/list'
+        path: '/hospitable_rental_mobile/home/list'
     },
     {
         id: 2,
         img: Nav2,
         title: 'Flat-Share',
-        path: '/home/list'
+        path: '/hospitable_rental_mobile/home/list'
     },
     {
         id: 3,
         img: Nav3,
         title: 'Map Search',
-        path: '/map'
+        path: '/hospitable_rental_mobile/map'
     },
     {
         id: 4,
         img: Nav4,
         title: 'Rent Out',
-        path: '/rent'
+        path: '/hospitable_rental_mobile/rent'
     }
 ]
 
@@ -142,7 +142,7 @@ export default class Index extends React.Component{
             item => <Grid.Item key={item.id}>
                 <div
                     className="news-item"
-                    onClick={() => this.props.history.push('/home/news')}
+                    onClick={() => this.props.history.push('/hospitable_rental_mobile/home/news')}
                 >
                     <div className="imgwrap">
                         <img
@@ -175,14 +175,14 @@ export default class Index extends React.Component{
                             <div className="search">
                                 {/* location */}
                                 <div className="location"
-                                    onClick={() => this.props.history.push('/citylist')}
+                                    onClick={() => this.props.history.push('/hospitable_rental_mobile/citylist')}
                                 >
                                     <span className="name">Shanghai</span>
                                     <i className="iconfont icon-arrow" />
                                 </div>
                                 {/* search form */}
                                 <div className="form"
-                                    onClick={() => this.props.history.push('/search')}
+                                    onClick={() => this.props.history.push('/hospitable_rental_mobile/search')}
                                 >
                                     <i className="iconfont icon-search" />
                                     <span className="text">Enter location or address...</span>
@@ -190,7 +190,7 @@ export default class Index extends React.Component{
                             </div>
                         </Grid.Item>
                         <div className="map-icon"
-                            onClick={() => this.props.history.push('/map')}
+                            onClick={() => this.props.history.push('/hospitable_rental_mobile/map')}
                         >
                             <i className="iconfont icon-map" />
                         </div>
