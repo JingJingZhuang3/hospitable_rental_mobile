@@ -1,8 +1,61 @@
 // city list: top navigation bar
-.navbar{
-    background-color: #f6f5f6;
-    color: #333;
-    .adm-nav-bar-title{
+.citylist{
+    height: 100%;
+    // leave space for city list
+    padding-top: 45px;
+    .navbar{
+        background-color: #f6f5f6;
         color: #333;
+        margin-top: -45px;
+        position: relative;
+        .adm-nav-bar-title{
+            color: #333;
+        }
     }
+    .city {
+        .title {
+          font-size: 14px;
+          padding: 10px 15px;
+          color: #999;
+        }
+        .name {
+          text-transform:capitalize;
+          width: 100%;
+          height: 50px;
+          padding: 0 15px;
+          line-height: 50px;
+          border-bottom: 1px solid #eeeeee;
+          font-size: 16px;
+          color: #333;
+          background: #fff;
+          cursor: pointer;
+        }
+    }
+    // right side index
+  .city-index {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 5px;
+    z-index: 1;
+    height: 90%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    text-align: center;
+
+    .city-index-item {
+      flex: 1;
+    }
+
+    .index-active {
+      color: #fff;
+      background-color: #21b97a;
+      border-radius: 100%;
+      display: inline-block;
+      font-size: 12px;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+    }
+  }
 }

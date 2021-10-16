@@ -14,6 +14,7 @@ function App() {
         <Route path="/hospitable_rental_mobile" exact render={() => <Redirect to="/hospitable_rental_mobile/home" />} />
         {/* configure route */}
         <Route path="/hospitable_rental_mobile/home" component={Home}></Route>
+        {/* No table bar component goes here: */}
         <Route path="/hospitable_rental_mobile/citylist" component={CityList}></Route>
         <Route path="/hospitable_rental_mobile/map" component={CityMap} />
         <Route path="/hospitable_rental_mobile/rent" component={Rent} />

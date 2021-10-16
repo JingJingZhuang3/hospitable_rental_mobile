@@ -8,52 +8,52 @@
   width: 100%;
   padding: 0 10px;
 
-  // left side white area
-  .search {
-    height: 34px;
-    margin: 0 10px;
-    padding: 9px 5px 5px 8px;
-    border-radius: 3px;
-    background-color: #fff;
-    // location
-    .location {
-      float: left;
-      .icon-arrow {
-        margin-left: 2px;
-        font-size: 12px;
-        color: #7f7f80;
+    // left side white area
+    .search {
+      height: 34px;
+      margin: 0 10px;
+      padding: 9px 5px 5px 8px;
+      border-radius: 3px;
+      background-color: #fff;
+      // location
+      .location {
+        float: left;
+        .icon-arrow {
+          margin-left: 2px;
+          font-size: 12px;
+          color: #7f7f80;
+        }
+      }
+
+      // search form
+      .form {
+        float: left;
+        border-left: solid 1px #e5e5e5;
+        margin-left: 12px;
+        line-height: 16px;
+        .icon-search {
+          vertical-align: middle;
+          padding: 0 2px 0 12px;
+          color: #9c9fa1;
+          font-size: 15px;
+        }
+        .text {
+          vertical-align: middle;
+          font-size: 14px;
+          color: #9c9fa1;
+        }
       }
     }
 
-    // search form
-    .form {
-      float: left;
-      border-left: solid 1px #e5e5e5;
-      margin-left: 12px;
-      line-height: 16px;
-      .icon-search {
-        vertical-align: middle;
-        padding: 0 2px 0 12px;
-        color: #9c9fa1;
-        font-size: 15px;
-      }
-      .text {
-        vertical-align: middle;
-        font-size: 14px;
-        color: #9c9fa1;
+    // right side map icon
+    .map-icon{
+      padding-top: 5px;
+      .icon-map {
+        font-size: 25px;
+        color: #fff;
       }
     }
   }
-
-  // right side map icon
-  .map-icon{
-    padding-top: 5px;
-    .icon-map {
-      font-size: 25px;
-      color: #fff;
-    }
-  }
-}
   .content {
     height: 212px;
     color: #ffffff;
@@ -62,6 +62,14 @@
     align-items: center;
     font-size: 48px;
     user-select: none;
+  }
+  .swiperfailed{
+    height: 212px;
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
   }
 }
 // alble to use nested css

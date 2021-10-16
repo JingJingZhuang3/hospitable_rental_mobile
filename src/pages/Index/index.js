@@ -7,6 +7,7 @@ import Nav1 from '../../assets/images/nav-1.png'
 import Nav2 from '../../assets/images/nav-2.png'
 import Nav3 from '../../assets/images/nav-3.png'
 import Nav4 from '../../assets/images/nav-4.png'
+import { getCurrentCity} from '../../utils'
 
 // navigation menu data
 const navs = [
@@ -36,10 +37,12 @@ const navs = [
     }
 ]
 
-// get current location
+const colors = ['#ace0ff', 'lightgreen', '#ffcfac']
+/** get current location
 navigator.geolocation.getCurrentPosition(position => {
     // console.log('current position: ', position)
 })
+*/
 
 export default class Index extends React.Component{
     state = {
@@ -47,7 +50,9 @@ export default class Index extends React.Component{
         // rental group data
         groups: [],
         // news data
-        news: []
+        news: [],
+        // current city name
+        curCityName: ''
     }
     // get swipers images
     async getSwipers() {
@@ -81,10 +86,16 @@ export default class Index extends React.Component{
         })
         // console.log(res.data.body)
     }
-    componentDidMount() {
+    // Get info when render the pages
+    async componentDidMount() {
         this.getSwipers()
         this.getGroups()
         this.getNews()
+        // get city name based on the IP: see utils folder
+        const curCity = await getCurrentCity()
+        this.setState({
+            curCityName: curCity.label
+        })
     }
     // construct render swipers
     renderSwipers() {
@@ -108,6 +119,22 @@ export default class Index extends React.Component{
             </Swiper.Item>
         ))
     }
+    // Swiper images Data Request failed/Lost connection
+    swipersfailed() {
+        return colors.map((color, index) => (
+            <Swiper.Item key={index}>
+              <div
+                className="swiperfailed"
+                style={{ background: color }}
+                onClick={() => {
+                  Toast.show(`Failed to request Swiper images.`)
+                }}
+              >
+                Default Image {index + 1}
+              </div>
+            </Swiper.Item>
+        ))
+    }
     // render navigation menu
     renderNavs() {
         return navs.map(
@@ -127,7 +154,7 @@ export default class Index extends React.Component{
                     className="group-item"
                     // onClick={() => this.props.history.push('/hospitable_rental_mobile/home/profile')}
                     onClick={() => {
-                        Toast.show(`Sorry, it's just a decoration:>`)
+                        Toast.show(`Sorry, it's just a decoration...`)
                     }}
                 >
                     <div className="desc">
@@ -171,7 +198,9 @@ export default class Index extends React.Component{
             <div>
                 {/* Images Swiper */}
                 <div className="swiper">
-                    <Swiper autoplay>{this.renderSwipers()}</Swiper>
+                    <Swiper autoplay>{
+                        this.state.swipers.length >=2 ? this.renderSwipers() : this.swipersfailed()
+                    }</Swiper>
                     <Grid columns={13} className="search-box">
                         <Grid.Item span={12}> 
                             {/* search bar Component */}
@@ -180,7 +209,7 @@ export default class Index extends React.Component{
                                 <div className="location"
                                     onClick={() => this.props.history.push('/hospitable_rental_mobile/citylist')}
                                 >
-                                    <span className="name">Shanghai</span>
+                                    <span className="name">{this.state.curCityName}</span>
                                     <i className="iconfont icon-arrow" />
                                 </div>
                                 {/* search form */}
@@ -207,7 +236,10 @@ export default class Index extends React.Component{
                 <div className="group">
                     <h3 className="group-title">
                         Rental Group
-                        <span className="more">More</span>
+                        <span
+                            className="more"
+                            onClick={() => {Toast.show(`Sorry, it's just a decoration lol.`)}}
+                        >More</span>
                     </h3>
                     <Grid columns={2} gap={8}>
                         {this.renderGroups()}
