@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/hospitable_rental_mobile/static/css/main.9ed19ab0.chunk.css",
-    "main.js": "/hospitable_rental_mobile/static/js/main.c29c0bf0.chunk.js",
-    "main.js.map": "/hospitable_rental_mobile/static/js/main.c29c0bf0.chunk.js.map",
+    "main.css": "/hospitable_rental_mobile/static/css/main.5e8c30dc.chunk.css",
+    "main.js": "/hospitable_rental_mobile/static/js/main.75cbfc84.chunk.js",
+    "main.js.map": "/hospitable_rental_mobile/static/js/main.75cbfc84.chunk.js.map",
     "runtime-main.js": "/hospitable_rental_mobile/static/js/runtime-main.0b03b782.js",
     "runtime-main.js.map": "/hospitable_rental_mobile/static/js/runtime-main.0b03b782.js.map",
-    "static/css/2.1cb5208b.chunk.css": "/hospitable_rental_mobile/static/css/2.1cb5208b.chunk.css",
-    "static/js/2.dbdfe8a6.chunk.js": "/hospitable_rental_mobile/static/js/2.dbdfe8a6.chunk.js",
-    "static/js/2.dbdfe8a6.chunk.js.map": "/hospitable_rental_mobile/static/js/2.dbdfe8a6.chunk.js.map",
+    "static/css/2.ec924f02.chunk.css": "/hospitable_rental_mobile/static/css/2.ec924f02.chunk.css",
+    "static/js/2.e382f7a7.chunk.js": "/hospitable_rental_mobile/static/js/2.e382f7a7.chunk.js",
+    "static/js/2.e382f7a7.chunk.js.map": "/hospitable_rental_mobile/static/js/2.e382f7a7.chunk.js.map",
     "index.html": "/hospitable_rental_mobile/index.html",
-    "static/css/2.1cb5208b.chunk.css.map": "/hospitable_rental_mobile/static/css/2.1cb5208b.chunk.css.map",
-    "static/css/main.9ed19ab0.chunk.css.map": "/hospitable_rental_mobile/static/css/main.9ed19ab0.chunk.css.map",
-    "static/js/2.dbdfe8a6.chunk.js.LICENSE.txt": "/hospitable_rental_mobile/static/js/2.dbdfe8a6.chunk.js.LICENSE.txt",
+    "static/css/2.ec924f02.chunk.css.map": "/hospitable_rental_mobile/static/css/2.ec924f02.chunk.css.map",
+    "static/css/main.5e8c30dc.chunk.css.map": "/hospitable_rental_mobile/static/css/main.5e8c30dc.chunk.css.map",
+    "static/js/2.e382f7a7.chunk.js.LICENSE.txt": "/hospitable_rental_mobile/static/js/2.e382f7a7.chunk.js.LICENSE.txt",
     "static/media/busy.svg": "/hospitable_rental_mobile/static/media/busy.782b6cc4.svg",
     "static/media/default.svg": "/hospitable_rental_mobile/static/media/default.b3c5970b.svg",
     "static/media/disconnected.svg": "/hospitable_rental_mobile/static/media/disconnected.ce612307.svg",
@@ -24,9 +24,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0b03b782.js",
-    "static/css/2.1cb5208b.chunk.css",
-    "static/js/2.dbdfe8a6.chunk.js",
-    "static/css/main.9ed19ab0.chunk.css",
-    "static/js/main.c29c0bf0.chunk.js"
+    "static/css/2.ec924f02.chunk.css",
+    "static/js/2.e382f7a7.chunk.js",
+    "static/css/main.5e8c30dc.chunk.css",
+    "static/js/main.75cbfc84.chunk.js"
   ]
 }
