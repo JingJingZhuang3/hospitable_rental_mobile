@@ -17,3 +17,5 @@ Website Link: https://jingjingzhuang3.github.io/hospitable_rental_mobile
 > The Map only able to located in China. Location outside China cannot be located because authorization only available for commerce
 - Database: MySQL
 > All data are in localhost
+## Current progress demo:
+![Alt demo](./demo.gif)
