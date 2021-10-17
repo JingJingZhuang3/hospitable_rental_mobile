@@ -15,3 +15,5 @@ Website Link: https://jingjingzhuang3.github.io/hospitable_rental_mobile
 - Other Component Libraries: react-virtualized, formil+yup, react-spring, etc.
 - Map API: Baidu Map API
 > The Map only able to located in China. Location outside China cannot be located because authorization only for commerce
+- Database: MySQL
+> All data are in localhost
