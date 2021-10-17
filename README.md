@@ -18,4 +18,4 @@ Website Link: https://jingjingzhuang3.github.io/hospitable_rental_mobile
 - Database: MySQL
 > All data are in localhost
 ## Current progress demo:
-![Alt demo](./demo.gif)
+![Alt demo](./demo/demo.gif)
