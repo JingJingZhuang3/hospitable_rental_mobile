@@ -1,10 +1,11 @@
 import React from "react"
 // import { Route } from 'react-router-dom'
-import { NavBar, Toast } from 'antd-mobile'
+import { Toast } from 'antd-mobile'
 import './index.scss'
 import axios from 'axios'
 import { getCurrentCity } from '../../utils'
 import { List, AutoSizer } from 'react-virtualized';
+import NavHeader from "../../components/NavHeader"
 
 
 // Title A,B,C,.. height
@@ -58,9 +59,6 @@ export default class CityList extends React.Component{
         }
         // create ref obj
         this.cityListComponent = React.createRef()
-    }
-    handleBack = () => {
-        this.props.history.go(-1)
     }
     async getCityList() {
         const res = await axios.get('http://localhost:8080/area/city', {
@@ -165,12 +163,7 @@ export default class CityList extends React.Component{
     render() {
         return (
             <div className = "citylist">
-                <div className="navbar">
-                    <NavBar
-                        backArrow={<i className="iconfont icon-back" />}
-                        onBack={this.handleBack}
-                    >City List</NavBar>
-                </div>
+                <NavHeader>City List</NavHeader>
                 {/* City List */}
                 <AutoSizer>
                     {   // adjust list w+h

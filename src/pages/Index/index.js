@@ -130,7 +130,7 @@ export default class Index extends React.Component{
                   Toast.show(`Failed to request Swiper images.`)
                 }}
               >
-                Default Image {index + 1}
+                Data is in Localhost.<br/>See ReadMe for Current Project DEMO.
               </div>
             </Swiper.Item>
         ))

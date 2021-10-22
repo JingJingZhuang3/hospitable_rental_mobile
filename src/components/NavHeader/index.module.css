@@ -1,0 +1,11 @@
+.navBar{
+    background-color: #f6f5f6;
+    color: #333;
+    position: relative;
+    margin-top: -45px;
+}
+
+/* global type */
+.navBar :global(.adm-nav-bar-title){
+    color: #333;
+}
