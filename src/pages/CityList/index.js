@@ -2,11 +2,10 @@ import React from "react"
 // import { Route } from 'react-router-dom'
 import { Toast } from 'antd-mobile'
 import './index.scss'
-import axios from 'axios'
 import { getCurrentCity } from '../../utils'
 import { List, AutoSizer } from 'react-virtualized';
 import NavHeader from "../../components/NavHeader"
-
+import { API } from '../../utils/api'
 
 // Title A,B,C,.. height
 const TITLE_HEIGHT = 36
@@ -61,7 +60,7 @@ export default class CityList extends React.Component{
         this.cityListComponent = React.createRef()
     }
     async getCityList() {
-        const res = await axios.get('http://localhost:8080/area/city', {
+        const res = await API.get('/area/city', {
             params: {
                 level: 1
             }
@@ -70,7 +69,7 @@ export default class CityList extends React.Component{
         const { cityList, cityIndex } = formatCityData(res.data.body)
         // console.log(cityList, cityIndex)
         // get popular city list
-        const res_hot = await axios.get('http://localhost:8080/area/hot')
+        const res_hot = await API.get('/area/hot')
         cityList['hot'] = res_hot.data.body 
         cityIndex.unshift('hot')    // prepend
         // get current city location

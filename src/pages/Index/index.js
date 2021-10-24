@@ -2,12 +2,13 @@ import React from 'react'
 // import { Route } from 'react-router-dom'
 import { Swiper, Grid, Toast } from 'antd-mobile'
 import './index.scss'
-import axios from 'axios'
 import Nav1 from '../../assets/images/nav-1.png'
 import Nav2 from '../../assets/images/nav-2.png'
 import Nav3 from '../../assets/images/nav-3.png'
 import Nav4 from '../../assets/images/nav-4.png'
 import { getCurrentCity} from '../../utils'
+import { BASE_URL } from '../../utils/url'
+import { API } from '../../utils/api'
 
 // navigation menu data
 const navs = [
@@ -56,7 +57,7 @@ export default class Index extends React.Component{
     }
     // get swipers images
     async getSwipers() {
-        const res = await axios.get('http://localhost:8080/home/swiper')
+        const res = await API.get('/home/swiper')
         // console.log(res.data.body[0].imgSrc)
         // res.data.body.map(item => images.concat(item.imgSrc))
         this.setState({
@@ -65,7 +66,7 @@ export default class Index extends React.Component{
     }
     // get rental groups data
     async getGroups() {
-        const res = await axios.get('http://localhost:8080/home/groups', {
+        const res = await API.get('/home/groups', {
             params: {
                 area: 'AREA%7C88cff55c-aaa4-e2e0'
             }
@@ -76,7 +77,7 @@ export default class Index extends React.Component{
     }
     // get news data
     async getNews() {
-        const res = await axios.get('http://localhost:8080/home/news', {
+        const res = await API.get('/home/news', {
             params: {
                 area: 'AREA%7C88cff55c-aaa4-e2e0'
             }
@@ -110,7 +111,7 @@ export default class Index extends React.Component{
                     {/* <a> tag only use if you want to click image to a link */}
                     {/* <a key={item.id} href="http://www.google.com"> */}
                     <img
-                        src={`http://localhost:8080${item.imgSrc}`}
+                        src={BASE_URL + item.imgSrc}
                         alt=""
                         style={{ width: '100%', verticalAlign: 'top' }}
                     />
@@ -161,7 +162,7 @@ export default class Index extends React.Component{
                         <p className="title">{item.title}</p>
                         <span className="info">{item.desc}</span>
                     </div>
-                    <img src={`http://localhost:8080${item.imgSrc}`} alt="" />
+                    <img src={BASE_URL + item.imgSrc} alt="" />
                 </div>
             </Grid.Item>
         )
@@ -177,7 +178,7 @@ export default class Index extends React.Component{
                     <div className="imgwrap">
                         <img
                             className="img"
-                            src={`http://localhost:8080${item.imgSrc}`}
+                            src={BASE_URL + item.imgSrc}
                             alt=""
                         />
                     </div>
